@@ -1,0 +1,128 @@
+// Table Module
+// ============================================================
+
+@m-table__hover-color: lighten(@brand-color, 50%);
+
+.m-table-resp-properties {
+  background: transparent;
+  box-shadow: none;
+
+  thead {
+    display: none;
+  }
+
+  tbody {
+    display: table-row-group;
+  }
+
+  tr {
+    display: block;
+    .card;
+    margin-bottom: @vr2;
+    &:last-child {
+      td {
+        border-bottom: @border;
+      }
+    }
+  }
+  th, td {
+    display: block;
+    height: auto;
+    padding: @vr1;
+  }
+
+  td:before {
+    content: attr(data-label);
+    float: left;
+    font-size: @h6;
+    font-weight: @semi-bold;
+    text-transform: uppercase;
+    color: @black;
+  }
+}
+
+.m-table {
+  border-collapse: separate;
+  text-align: left;
+  .card;
+
+  &.-fluid {
+    width: 100%;
+  }
+  &.-resp {
+    @media @mobile, @tablet {
+      .m-table-resp-properties;
+    }
+  }
+  &.-m-resp {
+    @media @mobile {
+      .m-table-resp-properties;
+    }
+  }
+  &.-t-resp {
+    @media @tablet {
+      .m-table-resp-properties;
+    }
+  }
+  thead {
+    th {
+      height: @vr5;
+      font-size: @h6;
+      font-weight: @semi-bold;
+      color: @black;
+      &.-clickable {
+        cursor: pointer;
+        &:hover {
+          background: @m-table__hover-color;
+        }
+      }
+    }
+  }
+  tbody {
+    &.-clickable {
+      tr{
+        cursor: pointer;
+        &:hover {
+          background: @m-table__hover-color;
+        }
+      }
+    }
+  }
+  tr {
+    transition: background .2s ease;
+    &:last-child {
+      td {
+        border-bottom: 0;
+      }
+    }
+  }
+  th, td {
+    height: @vr5;
+    vertical-align: middle;
+    padding-left: @vr2;
+    padding-right: @vr2;
+    border-bottom: @border;
+    transition: background .2s ease;
+
+    // This builds the shrink/grow functionality into the table
+    // &:not(:last-child){
+    //   white-space: nowrap;
+    // }
+    // &:first-child{
+    //   width: 100%;
+    // }
+
+    &.-shrink {
+      white-space: nowrap;
+    }
+    &.-grow {
+      width: 99%;
+    }
+    a {
+      padding-right: @vr1;
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+  }
+}

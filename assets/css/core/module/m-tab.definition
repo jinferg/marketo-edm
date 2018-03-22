@@ -1,0 +1,173 @@
+// Tab Module
+// ============================================================
+// Easy Responsive Tabs Plugin
+// http://www.jqueryscript.net/accordion/Easy-Responsive-Tab-Accordion-Control-Plugin-For-jQuery.html
+
+.m-tab {
+  &-list {
+    margin: 0;
+    box-shadow: inset 0px -2px 0px 0px @shade-light;
+    &:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    @media @mobile, @tablet {
+      display: none;
+    }
+    &__item {
+      display: inline-block;
+      float: left;
+      margin: 0;
+      margin-right: @vr2;
+      padding-bottom: @vr2;
+      font-size: @h5;
+      list-style: none;
+      cursor: pointer;
+      color: lighten(@default-color, 30%);
+      &.is-active {
+        box-shadow: inset 0px -2px 0px 0px darken(@brand-color, 20%);
+        color: darken(@brand-color, 20%);
+      }
+    }
+  }
+
+  &-container {
+    margin-top: @vr2;
+    padding: 0;
+    clear: left;
+
+    &__tab {
+      cursor: pointer;
+      display: none;
+      margin: 0;
+      padding: @vr1 + @vr0;
+      font-size: @h5;
+      line-height: @vr2;
+      .fill(@white);
+      @media @mobile, @tablet {
+        display: block;
+      }
+      &.is-active {
+        background: @brand-color;
+        color: @white;
+        .m-tab-arrow {
+          border: none;
+          border-left: 6px solid transparent;
+          border-right: 6px solid transparent;
+          border-bottom: 7px solid @white;
+        }
+      }
+    }
+  }
+
+  &-content {
+    display: none;
+    &.is-active {
+      display: block;
+      &.is-closed {
+        display: block;
+      }
+    }
+  }
+
+  &-arrow {
+    width: 0;
+    height: 0;
+    float: right;
+    margin-top: 6px;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 7px solid @shade-light;
+  }
+
+
+  // Side Tabs
+  // ------------------------------
+
+  &.-side {
+    .m-tab-list {
+      float: left;
+      width: 20%;
+      box-shadow: none;
+      &__item {
+        display: block;
+        margin: 0;
+        float: none;
+        padding: @vr1 + @vr0;
+        cursor: pointer;
+        font-weight: @regular;
+        font-size: @h5;
+        line-height: @vr2;
+        list-style: none;
+        cursor: pointer;
+        color: lighten(@default-color, 30%);
+        &.is-active {
+          box-shadow: inset 2px 0px 0px 0px @brand-color;
+          margin-bottom: -1px;
+          color: @black;
+        }
+      }
+    }
+    .m-tab-container {
+      padding: 0;
+      float: left;
+      width: 80%;
+      margin: 0;
+      min-height: 250px;
+      clear: none;
+      @media @mobile, @tablet {
+        border: none;
+        float: none;
+        width: 100%;
+        min-height: initial;
+        clear: none;
+      }
+    }
+  }
+
+
+  // Tab Only
+  // ------------------------------
+
+  &.-only {
+    .m-tab-list {
+      @media @mobile, @tablet {
+        display: block;
+      }
+    }
+    .m-tab-container {
+      &__tab {
+        @media @mobile, @tablet {
+          display: none;
+        }
+      }
+    }
+  }
+
+
+  // Accordion
+  // ------------------------------
+
+  &.-accordion {
+    .m-tab-container {
+      &__tab {
+        display: block;
+      }
+    }
+    .m-tab-content {
+      border: 1px solid #c1c1c1;
+      &:last-child {
+        border-bottom: 1px solid #c1c1c1;
+      }
+    }
+  }
+
+
+  // General
+  // ------------------------------
+
+  .is-closed {
+    display: none;
+  }
+}

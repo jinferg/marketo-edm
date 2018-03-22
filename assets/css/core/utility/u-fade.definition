@@ -1,0 +1,46 @@
+// Fade Utility
+// ============================================================
+
+@u-fade__light: .8;
+@u-fade: .5;
+@u-fade__heavy: .2;
+
+.u-fade {
+	opacity: @u-fade !important;
+	&-light {
+		opacity: @u-fade__light !important;
+	}
+	&-heavy {
+		opacity: @u-fade__heavy !important;
+	}
+	&-1 {
+		opacity: .1;
+	}
+	&-2 {
+		opacity: .2;
+	}
+	&-3 {
+		opacity: .3;
+	}
+	&-4 {
+		opacity: .4;
+	}
+	&-5 {
+		opacity: .5;
+	}
+	&-6 {
+		opacity: .6;
+	}
+	&-7 {
+		opacity: .7;
+	}
+	&-8 {
+		opacity: .8;
+	}
+	&-9 {
+		opacity: .9;
+	}
+	&-10 {
+		opacity: .10;
+	}
+}

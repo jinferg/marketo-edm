@@ -1,0 +1,66 @@
+// Band Layout
+// ============================================================
+
+.l-band {
+
+  position: relative;
+  clear: both;
+  width: 100%;
+  .fill(@background);
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+  // Background
+  // ------------------------------
+
+  &.-red {
+    .fill(@red);
+  }
+  &.-orange {
+    .fill(@orange);
+  }
+  &.-yellow {
+    .fill(@yellow);
+  }
+  &.-green {
+    .fill(@green);
+  }
+  &.-blue {
+    .fill(@blue);
+  }
+  &.-purple {
+    .fill(@purple);
+  }
+  &.-black {
+    .fill(@black);
+  }
+  &.-white {
+    .fill(@white);
+  }
+  &.-brand {
+    .fill(@brand-color);
+  }
+  &.-accent {
+    .fill(@accent-color);
+  }
+  &.-shade-light {
+    .fill(@shade-light);
+  }
+  &.-shade {
+    .fill(@shade);
+  }
+  &.-shade-heavy {
+    .fill(@shade-heavy);
+  }
+
+  // Border
+  // ------------------------------
+
+  &.-border {
+    border-bottom: @border;
+  }
+}

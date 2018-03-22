@@ -1,0 +1,284 @@
+// Form Module
+// ============================================================
+
+
+@m-fairies__back-size: 1000px;
+@m-fairies__middle-size: 800px;
+@m-fairies__front-size: 600px;
+@m-fairies__timing: cubic-bezier(0.645, 0.045, 0.355, 1);
+@m-fairies__offset-factor: 1.2;
+
+.m-fairies {
+	display: block;
+	position: relative;
+	background: #1A1A1A;
+	width: 100%;
+	height: 600px;
+	overflow: hidden;
+	&__fairy {
+		display: block;
+		position: absolute;
+		&.-back {
+			width: @m-fairies__back-size;
+			height: @m-fairies__back-size;
+		}
+		&.-middle {
+			width: @m-fairies__middle-size;
+			height: @m-fairies__middle-size;
+		}
+		&.-front {
+			width: @m-fairies__front-size;
+			height: @m-fairies__front-size;
+		}
+	}
+	&.-top {
+		.m-fairies__fairy {
+			&.-back {
+				top: -(@m-fairies__back-size / 2) * @m-fairies__offset-factor;
+				left: -(@m-fairies__back-size / 6) * @m-fairies__offset-factor;
+				animation: fairy-top 8s alternate infinite @m-fairies__timing;
+			}
+			&.-middle {
+				top: -(@m-fairies__middle-size / 2) * @m-fairies__offset-factor;
+				left: -(@m-fairies__middle-size / 6) * @m-fairies__offset-factor;
+				animation: fairy-top 6s alternate infinite @m-fairies__timing;
+			}
+			&.-front {
+				top: -(@m-fairies__front-size / 2) * @m-fairies__offset-factor;
+				left: -(@m-fairies__front-size / 6) * @m-fairies__offset-factor;
+				animation: fairy-top 4s alternate infinite @m-fairies__timing;
+			}
+		}
+	}
+	&.-bottom {
+		.m-fairies__fairy {
+			&.-back {
+				bottom: -(@m-fairies__back-size / 2) * @m-fairies__offset-factor;
+				left: -(@m-fairies__back-size / 6) * @m-fairies__offset-factor;
+				animation: fairy-bottom 8s alternate infinite @m-fairies__timing;
+			}
+			&.-middle {
+				bottom: -(@m-fairies__middle-size / 2) * @m-fairies__offset-factor;
+				left: -(@m-fairies__middle-size / 6) * @m-fairies__offset-factor;
+				animation: fairy-bottom 6s alternate infinite @m-fairies__timing;
+			}
+			&.-front {
+				bottom: -(@m-fairies__front-size / 2) * @m-fairies__offset-factor;
+				left: -(@m-fairies__front-size / 6) * @m-fairies__offset-factor;
+				animation: fairy-bottom 4s alternate infinite @m-fairies__timing;
+			}
+		}
+	}
+	&.-left {
+		.m-fairies__fairy {
+			&.-back {
+				top: -(@m-fairies__back-size / 4) * @m-fairies__offset-factor;
+				left: -(@m-fairies__back-size / 2) * @m-fairies__offset-factor;
+				animation: fairy-left 8s alternate infinite @m-fairies__timing;
+			}
+			&.-middle {
+				top: -(@m-fairies__middle-size / 4) * @m-fairies__offset-factor;
+				left: -(@m-fairies__middle-size / 4) * @m-fairies__offset-factor;
+				animation: fairy-left 6s alternate infinite @m-fairies__timing;
+			}
+			&.-front {
+				top: -(@m-fairies__front-size / 4) * @m-fairies__offset-factor;
+				left: -(@m-fairies__front-size / 2) * @m-fairies__offset-factor;
+				animation: fairy-left 4s alternate infinite @m-fairies__timing;
+			}
+		}
+	}
+	&.-right {
+		.m-fairies__fairy {
+			&.-back {
+				top: -(@m-fairies__back-size / 4) * @m-fairies__offset-factor;
+				right: -(@m-fairies__back-size / 2) * @m-fairies__offset-factor;
+				animation: fairy-right 8s alternate infinite @m-fairies__timing;
+			}
+			&.-middle {
+				top: -(@m-fairies__middle-size / 4) * @m-fairies__offset-factor;
+				right: -(@m-fairies__middle-size / 4) * @m-fairies__offset-factor;
+				animation: fairy-right 6s alternate infinite @m-fairies__timing;
+			}
+			&.-front {
+				top: -(@m-fairies__front-size / 4) * @m-fairies__offset-factor;
+				right: -(@m-fairies__front-size / 2) * @m-fairies__offset-factor;
+				animation: fairy-right 4s alternate infinite @m-fairies__timing;
+			}
+		}
+	}
+
+
+	&.-top-left {
+		.m-fairies__fairy {
+			&.-back {
+				top: -(@m-fairies__back-size / 2) * @m-fairies__offset-factor;
+				left: -(@m-fairies__back-size / 3) * @m-fairies__offset-factor;
+				animation: fairy-top-left 8s alternate infinite @m-fairies__timing;
+			}
+			&.-middle {
+				top: -(@m-fairies__middle-size / 4) * @m-fairies__offset-factor;
+				left: -(@m-fairies__middle-size / 3) * @m-fairies__offset-factor;
+				animation: fairy-top-left 6s alternate infinite @m-fairies__timing;
+			}
+			&.-front {
+				top: -(@m-fairies__front-size / 2) * @m-fairies__offset-factor;
+				left: -(@m-fairies__front-size / 3) * @m-fairies__offset-factor;
+				animation: fairy-top-left 4s alternate infinite @m-fairies__timing;
+			}
+		}
+	}
+	&.-top-right {
+		.m-fairies__fairy {
+			&.-back {
+				top: -(@m-fairies__back-size / 2) * @m-fairies__offset-factor;
+				right: -(@m-fairies__back-size / 3) * @m-fairies__offset-factor;
+				animation: fairy-top-right 8s alternate infinite @m-fairies__timing;
+			}
+			&.-middle {
+				top: -(@m-fairies__middle-size / 4) * @m-fairies__offset-factor;
+				right: -(@m-fairies__middle-size / 3) * @m-fairies__offset-factor;
+				animation: fairy-top-right 6s alternate infinite @m-fairies__timing;
+			}
+			&.-front {
+				top: -(@m-fairies__front-size / 2) * @m-fairies__offset-factor;
+				right: -(@m-fairies__front-size / 3) * @m-fairies__offset-factor;
+				animation: fairy-top-right 4s alternate infinite @m-fairies__timing;
+			}
+		}
+	}
+	&.-bottom-right {
+		.m-fairies__fairy {
+			&.-back {
+				bottom: -(@m-fairies__back-size / 2) * @m-fairies__offset-factor;
+				right: -(@m-fairies__back-size / 3) * @m-fairies__offset-factor;
+				animation: fairy-bottom-right 8s alternate infinite @m-fairies__timing;
+			}
+			&.-middle {
+				bottom: -(@m-fairies__middle-size / 4) * @m-fairies__offset-factor;
+				right: -(@m-fairies__middle-size / 3) * @m-fairies__offset-factor;
+				animation: fairy-bottom-right 6s alternate infinite @m-fairies__timing;
+			}
+			&.-front {
+				bottom: -(@m-fairies__front-size / 2) * @m-fairies__offset-factor;
+				right: -(@m-fairies__front-size / 3) * @m-fairies__offset-factor;
+				animation: fairy-bottom-right 4s alternate infinite @m-fairies__timing;
+			}
+		}
+	}
+	&.-bottom-left {
+		.m-fairies__fairy {
+			&.-back {
+				bottom: -(@m-fairies__back-size / 2) * @m-fairies__offset-factor;
+				left: -(@m-fairies__back-size / 3) * @m-fairies__offset-factor;
+				animation: fairy-bottom-left 8s alternate infinite @m-fairies__timing;
+			}
+			&.-middle {
+				bottom: -(@m-fairies__middle-size / 4) * @m-fairies__offset-factor;
+				left: -(@m-fairies__middle-size / 3) * @m-fairies__offset-factor;
+				animation: fairy-bottom-left 6s alternate infinite @m-fairies__timing;
+			}
+			&.-front {
+				bottom: -(@m-fairies__front-size / 2) * @m-fairies__offset-factor;
+				left: -(@m-fairies__front-size / 3) * @m-fairies__offset-factor;
+				animation: fairy-bottom-left 4s alternate infinite @m-fairies__timing;
+			}
+		}
+	}
+}
+
+@keyframes fairy-top {
+  0%   {
+		transform: translateX(0)
+							 scale(1);
+	}
+	100% {
+		transform: translateX(200px)
+							 scale(1.5);
+	}
+}
+@keyframes fairy-bottom {
+  0%   {
+		transform: translateX(0)
+							 scale(1);
+	}
+	100% {
+		transform: translateX(200px)
+							 scale(1.5);
+	}
+}
+@keyframes fairy-left {
+  0%   {
+		transform: translateY(0)
+							 scale(1);
+	}
+	100% {
+		transform: translateY(200px)
+							 scale(1.5);
+	}
+}
+@keyframes fairy-right {
+  0%   {
+		transform: translateY(0)
+							 scale(1);
+	}
+	100% {
+		transform: translateY(200px)
+							 scale(1.5);
+	}
+}
+
+
+
+
+@keyframes fairy-top-left {
+  0%   {
+		transform: translateY(0)
+		           translateX(0)
+							 scale(1);
+	}
+	100% {
+		transform: translateY(-200px)
+		           translateX(200px)
+							 scale(1.5);
+	}
+}
+
+@keyframes fairy-top-right {
+  0%   {
+		transform: translateY(0)
+		           translateX(0)
+							 scale(1);
+	}
+	100% {
+		transform: translateY(-200px)
+		           translateX(-200px)
+							 scale(1.5);
+	}
+}
+
+@keyframes fairy-bottom-left {
+  0%   {
+		transform: translateY(0)
+		           translateX(0)
+							 scale(1);
+	}
+	100% {
+		transform: translateY(200px)
+		           translateX(200px)
+							 scale(1.5);
+	}
+}
+
+@keyframes fairy-bottom-right {
+  0%   {
+		transform: translateY(0)
+		           translateX(0)
+							 scale(1);
+	}
+	100% {
+		transform: translateY(200px)
+		           translateX(-200px)
+							 scale(1.5);
+	}
+}

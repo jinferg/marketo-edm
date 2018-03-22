@@ -1,0 +1,89 @@
+// Form Module
+// ============================================================
+
+.lp-scroll-delay(@counter) when (@counter > 0) {
+  .lp-scroll-delay((@counter - 1));
+	a:nth-child(@{counter}) {
+		transition-delay: (0.08s * @counter);
+	}
+}
+
+@m-form__length: 50s;
+
+// body {
+//   padding-left: 100px;
+// }
+.m-scroll {
+  display: flex;
+  position: relative;
+  width: 100vw;
+  margin: auto;
+  z-index: 1;
+  &.-right {
+    .m-scroll__content {
+      div {
+        animation: scroll-right @m-form__length infinite linear;
+        @media @mobile {
+          animation: scroll-right 20s infinite linear;
+        }
+      }
+    }
+  }
+  &__content {
+    display: flex;
+    align-items: center;
+    &.-top {
+      a {
+        top: 200px;
+      }
+    }
+    &.-bottom {
+      a {
+        top: 200px;
+      }
+    }
+    div {
+			display: flex;
+			animation: scroll-left @m-form__length infinite linear;
+      @media @mobile {
+        animation: scroll-left 20s infinite linear;
+      }
+		}
+    a {
+      display: block;
+      position: relative;
+      width: 400px;
+      height: 400px;
+      bottom: 0;
+      opacity: 0;
+      transition: all .75s ease;
+      @media @mobile {
+        width: 200px;
+        height: 200px;
+      }
+    }
+    .lp-scroll-delay(12);
+    img {
+      display: block;
+      width: 100%;
+      &:first-child {
+        position: absolute;
+        bottom: 50%;
+        left: 0;
+        width: 70%;
+        transform: translateY(50%);
+      }
+    }
+  }
+
+
+}
+
+@keyframes scroll-left {
+  from   { transform: translateX(0%); }
+  to { transform: translateX(-50%); }
+}
+@keyframes scroll-right {
+  from   { transform: translateX(-50%); }
+  to { transform: translateX(0%); }
+}

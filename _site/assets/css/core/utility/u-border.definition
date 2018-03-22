@@ -1,0 +1,221 @@
+// Border Utility
+// ============================================================
+
+@u-border: 1px solid #dedede;
+
+
+.u-border {
+  border: @u-border !important;
+  &-top {
+    border-top: @u-border !important;
+  }
+  &-right {
+    border-right: @u-border !important;
+  }
+  &-bottom {
+    border-bottom: @u-border !important;
+  }
+  &-left {
+    border-left: @u-border !important;
+  }
+  &-x {
+    border-left: @u-border !important;
+    border-right: @u-border !important;
+  }
+  &-y {
+    border-top: @u-border !important;
+    border-bottom: @u-border !important;
+  }
+  &-radius {
+    border-radius: @radius !important;
+  }
+  &-none {
+    border: 0 !important;
+  }
+
+  // mobile
+  &-m {
+    &-top {
+      @media @mobile {
+        border-top: @u-border !important;
+      }
+    }
+    &-right {
+      @media @mobile {
+        border-right: @u-border !important;
+      }
+    }
+    &-bottom {
+      @media @mobile {
+        border-bottom: @u-border !important  ;
+      }
+    }
+    &-left {
+      @media @mobile {
+        border-left: @u-border !important;
+      }
+    }
+    &-x {
+      @media @mobile {
+        border-left: @u-border !important;
+        border-right: @u-border !important;
+      }
+    }
+    &-y {
+      @media @mobile {
+        border-top: @u-border !important;
+        border-bottom: @u-border !important;
+      }
+    }
+    &-radius {
+      @media @mobile {
+        border-radius: @radius !important;
+      }
+    }
+    &-none {
+      @media @mobile {
+        border: 0 !important;
+      }
+    }
+  }
+
+  // mobile
+  &-ml {
+    &-top {
+      @media @mobile-ls {
+        border-top: @u-border !important;
+      }
+    }
+    &-right {
+      @media @mobile-ls {
+        border-right: @u-border !important;
+      }
+    }
+    &-bottom {
+      @media @mobile-ls {
+        border-bottom: @u-border !important  ;
+      }
+    }
+    &-left {
+      @media @mobile-ls {
+        border-left: @u-border !important;
+      }
+    }
+    &-x {
+      @media @mobile-ls {
+        border-left: @u-border !important;
+        border-right: @u-border !important;
+      }
+    }
+    &-y {
+      @media @mobile-ls {
+        border-top: @u-border !important;
+        border-bottom: @u-border !important;
+      }
+    }
+    &-radius {
+      @media @mobile-ls {
+        border-radius: @radius !important;
+      }
+    }
+    &-none {
+      @media @mobile-ls {
+        border: 0 !important;
+      }
+    }
+  }
+
+  // tablet
+  &-t {
+    &-top {
+      @media @tablet {
+        border-top: @u-border !important;
+      }
+    }
+    &-right {
+      @media @tablet {
+        border-right: @u-border !important;
+      }
+
+    }
+    &-bottom {
+      @media @tablet {
+        border-bottom: @u-border !important  ;
+      }
+    }
+    &-left {
+      @media @tablet {
+        border-left: @u-border !important;
+      }
+    }
+    &-x {
+      @media @tablet {
+        border-left: @u-border !important;
+        border-right: @u-border !important;
+      }
+    }
+    &-y {
+      @media @tablet {
+        border-top: @u-border !important;
+        border-bottom: @u-border !important;
+      }
+    }
+    &-radius {
+      @media @tablet {
+        border-radius: @radius !important;
+      }
+    }
+    &-none {
+      @media @tablet {
+        border: 0 !important;
+      }
+    }
+  }
+
+  //desktop
+  &-d {
+    &-top {
+      @media @desktop {
+        border-top: @u-border !important;
+      }
+    }
+    &-right {
+      @media @desktop {
+        border-right: @u-border !important;
+      }
+
+    }
+    &-bottom {
+      @media @desktop {
+        border-bottom: @u-border !important  ;
+      }
+    }
+    &-left {
+      @media @desktop {
+        border-left: @u-border !important;
+      }
+    }
+    &-x {
+      @media @desktop {
+        border-left: @u-border !important;
+        border-right: @u-border !important;
+      }
+    }
+    &-y {
+      @media @desktop {
+        border-top: @u-border !important;
+        border-bottom: @u-border !important;
+      }
+    }
+    &-radius {
+      @media @desktop {
+        border-radius: @radius !important;
+      }
+    }
+    &-none {
+      @media @desktop {
+        border: 0;
+      }
+    }
+  }
+}

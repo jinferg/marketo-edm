@@ -1,0 +1,182 @@
+// Global
+// ============================================================
+
+html {
+	width: 100%;
+	height: 100%;
+	font-size: 62.5%;
+}
+body {
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	background: @background;
+	font-family: @font-family, sans-serif;
+	font-size: @font-size;
+	font-weight: @regular;
+	line-height: @line-height;
+	color: @default-color;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+::selection {
+  background: @accent-color;
+	color: white;
+}
+::-moz-selection {
+	background: @brand-color;
+	color: white;
+}
+
+// Headings
+// ------------------------------
+h1,h2,h3,h4,h5,h6 {
+	line-height: 1.25;
+}
+h1 {
+  font-size: @h1;
+  margin-top: @vr6;
+  margin-bottom: @vr3;
+}
+h2 {
+  font-size: @h2;
+  margin-top: @vr6;
+  margin-bottom: @vr2;
+}
+h3 {
+  font-size: @h3;
+  margin-top: @vr5;
+  margin-bottom: @vr3;
+}
+h4 {
+  font-size: @h4;
+  margin-top: @vr5;
+  margin-bottom: @vr2;
+}
+h5 {
+  font-size: @h5;
+  margin-top: @vr4;
+  margin-bottom: @vr2;
+}
+h6 {
+  font-size: @h6;
+  margin-top: @vr2;
+  margin-bottom: @vr1;
+}
+
+
+// General Text
+// ------------------------------
+
+a {
+	color: @link-color;
+	text-decoration: none;
+	cursor: pointer;
+	&:hover {
+	  color: darken(@link-color, 10%);
+	}
+}
+p {
+	font-weight: @regular;
+	margin-bottom: @vr2;
+	&:last-child {
+    margin-bottom: 0;
+  }
+}
+img {
+  width: 100%;
+}
+strong {
+	font-weight: @semi-bold;
+}
+b {
+	font-weight: @bold;
+}
+ol, ul {
+	list-style: initial;
+	margin: 0;
+}
+li {
+	display: list-item;
+}
+img {
+	display: block;
+}
+blockquote {
+	margin-bottom: @vr0;
+}
+blockquote p {
+	box-sizing: border-box;
+	max-width: 600px;
+	margin: auto;
+	padding: 4rem 2rem 4rem 2rem;
+	text-align: center;
+	font-size: 2rem;
+	color: @brand-color;
+	font-weight: @regular;
+}
+mark {
+  background: #C9F0FF;
+}
+br {
+  &.-m-hidden {
+    @media @mobile {
+      display: none;
+    }
+  }
+  &.-t-hidden {
+    @media @tablet {
+      display: none;
+    }
+  }
+  &.-d-hidden {
+    @media @desktop {
+      display: none;
+    }
+  }
+}
+
+
+// Horizontal Rule
+// ------------------------------
+
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: lighten(@default-color, 75%) 1px solid;
+	margin: @vr0 0;
+	padding: 0;
+	box-sizing: content-box;
+	height: 0;
+}
+
+
+// Subscripts & Superscripts
+// ------------------------------
+
+sub, sup {
+  font-size: 60%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+sup { top: -0.5em;left: .2em }
+sub { bottom: -0.25em; }
+
+
+// Codeblocks
+// ------------------------------
+
+code, pre {
+  font-family: Inconsolata, monospace, sans-serif;
+  white-space: pre-wrap;
+  background: darken(@background, 10%);
+  padding: 0 .5rem;
+  border-radius: @radius;
+  color: #555;
+}

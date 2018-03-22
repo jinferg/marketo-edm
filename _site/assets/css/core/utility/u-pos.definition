@@ -1,0 +1,176 @@
+// Position Utility
+// ============================================================
+
+.u-pos {
+  position: relative !important;
+
+  // Fixed
+  &-fixed {
+    position: fixed !important;
+
+    &-top {
+      position: fixed !important;
+      top: 0 !important;
+    }
+    &-right {
+      position: fixed !important;
+      right: 0 !important;
+    }
+    &-bottom {
+      position: fixed !important;
+      bottom: 0 !important;
+    }
+    &-left {
+      position: fixed !important;
+      left: 0 !important;
+    }
+  }
+
+  // Absolute
+  &-absolute {
+    position: absolute !important;
+
+    &-top {
+      position: absolute !important;
+      top: 0 !important;
+    }
+    &-right {
+      position: absolute !important;
+      right: 0 !important;
+    }
+    &-bottom {
+      position: absolute !important;
+      bottom: 0 !important;
+    }
+    &-left {
+      position: absolute !important;
+      left: 0 !important;
+    }
+  }
+  &-m {
+    @media @mobile {
+      &-fixed {
+        position: fixed !important;
+        &-top {
+          position: fixed !important;
+          top: 0 !important;
+        }
+        &-right {
+          position: fixed !important;
+          right: 0 !important;
+        }
+        &-bottom {
+          position: fixed !important;
+          bottom: 0 !important;
+        }
+        &-left {
+          position: fixed !important;
+          left: 0 !important;
+        }
+      }
+      &-absolute {
+        position: absolute !important;
+        &-top {
+          position: absolute !important;
+          top: 0 !important;
+        }
+        &-right {
+          position: absolute !important;
+          right: 0 !important;
+        }
+        &-bottom {
+          position: absolute !important;
+          bottom: 0 !important;
+        }
+        &-left {
+          position: absolute !important;
+          left: 0 !important;
+        }
+      }
+    }
+  }
+  &-t {
+    @media @tablet {
+      &-fixed {
+        position: fixed !important;
+        &-top {
+          position: fixed !important;
+          top: 0 !important;
+        }
+        &-right {
+          position: fixed !important;
+          right: 0 !important;
+        }
+        &-bottom {
+          position: fixed !important;
+          bottom: 0 !important;
+        }
+        &-left {
+          position: fixed !important;
+          left: 0 !important;
+        }
+      }
+      &-absolute {
+        position: absolute !important;
+        &-top {
+          position: absolute !important;
+          top: 0 !important;
+        }
+        &-right {
+          position: absolute !important;
+          right: 0 !important;
+        }
+        &-bottom {
+          position: absolute !important;
+          bottom: 0 !important;
+        }
+        &-left {
+          position: absolute !important;
+          left: 0 !important;
+        }
+      }
+    }
+  }
+  &-d {
+    @media @desktop {
+      &-fixed {
+        position: fixed !important;
+        &-top {
+          position: fixed !important;
+          top: 0 !important;
+        }
+        &-right {
+          position: fixed !important;
+          right: 0 !important;
+        }
+        &-bottom {
+          position: fixed !important;
+          bottom: 0 !important;
+        }
+        &-left {
+          position: fixed !important;
+          left: 0 !important;
+        }
+      }
+      &-absolute {
+        position: absolute !important;
+        &-top {
+          position: absolute !important;
+          top: 0 !important;
+        }
+        &-right {
+          position: absolute !important;
+          right: 0 !important;
+        }
+        &-bottom {
+          position: absolute !important;
+          bottom: 0 !important;
+        }
+        &-left {
+          position: absolute !important;
+          left: 0 !important;
+        }
+      }
+    }
+  }
+}

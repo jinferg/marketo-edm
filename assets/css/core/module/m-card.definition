@@ -1,0 +1,11 @@
+// Card Module
+// ============================================================
+
+.m-card {
+	display: block;
+	padding: @vr4;
+	.card(white);
+	&.-form {
+		max-width: @vr10 * 4;
+	}
+}

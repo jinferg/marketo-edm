@@ -1,0 +1,101 @@
+// List Module
+// ============================================================
+
+@m-list__xtight: @vr0;
+@m-list__tight: @vr1;
+@m-list__narrow: @vr2;
+@m-list__wide: @vr3;
+@m-list__xwide: @vr4;
+
+.m-list {
+
+  list-style: none;
+  margin-bottom: 0;
+
+  ul, ol {
+    list-style: none;
+    margin-bottom: 0;
+  }
+
+  &__item {
+    display: block;
+  }
+
+
+  // Direction
+  // ------------------------------
+
+  &.-inline {
+    & > li, .m-list__item {
+      display: inline-block;
+      margin-bottom: 0;
+    }
+    &.-tight,&.-narrow,&.-wide {
+      & > li, .m-list__item {
+        margin-bottom: 0;
+      }
+    }
+  }
+  &.-inline.-raw {
+    & > li, .m-list__item {
+      margin-right: 0;
+    }
+    li, .m-list__item:last-child {
+      margin-right: 0;
+    }
+  }
+  &.-inline.-tight {
+    & > li, .m-list__item {
+      margin-right: @m-list__tight;
+    }
+    li, .m-list__item:last-child {
+      margin-right: 0;
+    }
+  }
+  &.-inline.-narrow {
+    & > li, .m-list__item {
+      margin-right: @m-list__narrow;
+    }
+    li, .m-list__item:last-child {
+      margin-right: 0;
+    }
+  }
+  &.-inline.-wide {
+    & > li, .m-list__item {
+      margin-right: @m-list__wide;
+    }
+    li, .m-list__item:last-child {
+      margin-right: 0;
+    }
+  }
+
+
+  // Spacing
+  // ------------------------------
+
+  &.-xtight {
+    & > li, .m-list__item {
+      margin-bottom: @m-list__xtight;
+    }
+  }
+  &.-tight {
+    & > li, .m-list__item {
+      margin-bottom: @m-list__tight;
+    }
+  }
+  &.-narrow {
+    & > li, .m-list__item {
+      margin-bottom: @m-list__narrow;
+    }
+  }
+  &.-wide {
+    & > li, .m-list__item {
+      margin-bottom: @m-list__wide;
+    }
+  }
+  &.-xwide {
+    & > li, .m-list__item {
+      margin-bottom: @m-list__xwide;
+    }
+  }
+}

@@ -1,0 +1,326 @@
+// Icon Single
+// ============================================================
+
+.s-icon {
+  display: inline-block;
+  width: @vr5;
+  height: @vr5;
+  font-size: @vr5;
+  line-height: 1;
+  & > * {
+    display: block !important;
+  }
+
+  // Display Types
+  // ------------------------------
+  &.-block {
+    display: block;
+  }
+
+  // Sizes
+  // ------------------------------
+  &.-xsmall {
+    width: @vr3;
+    height: @vr3;
+    font-size: @vr3;
+  }
+  &.-small {
+    width: @vr4;
+    height: @vr4;
+    font-size: @vr4;
+  }
+  &.-large {
+    width: @vr6;
+    height: @vr6;
+    font-size: @vr6;
+  }
+  &.-xlarge {
+    width: @vr7;
+    height: @vr7;
+    font-size: @vr7;
+  }
+  &.-size {
+    &-1 {
+      width: @vr1;
+      height: @vr1;
+      font-size: @vr1;
+    }
+    &-2 {
+      width: @vr2;
+      height: @vr2;
+      font-size: @vr2;
+    }
+    &-3 {
+      width: @vr3;
+      height: @vr3;
+      font-size: @vr3;
+    }
+    &-4 {
+      width: @vr4;
+      height: @vr4;
+      font-size: @vr4;
+    }
+    &-5 {
+      width: @vr5;
+      height: @vr5;
+      font-size: @vr5;
+    }
+    &-6 {
+      width: @vr6;
+      height: @vr6;
+      font-size: @vr6;
+    }
+    &-7 {
+      width: @vr7;
+      height: @vr7;
+      font-size: @vr7;
+    }
+    &-8 {
+      width: @vr8;
+      height: @vr8;
+      font-size: @vr8;
+    }
+    &-9 {
+      width: @vr9;
+      height: @vr9;
+      font-size: @vr9;
+    }
+    &-10 {
+      width: @vr10;
+      height: @vr10;
+      font-size: @vr10;
+    }
+  }
+
+  @media @mobile {
+    .-m {
+      &.-xsmall {
+        width: @vr3;
+        height: @vr3;
+        font-size: @vr3;
+      }
+      &.-small {
+        width: @vr4;
+        height: @vr4;
+        font-size: @vr4;
+      }
+      &.-large {
+        width: @vr6;
+        height: @vr6;
+        font-size: @vr6;
+      }
+      &.-xlarge {
+        width: @vr7;
+        height: @vr7;
+        font-size: @vr7;
+      }
+      &.-size {
+        &-1 {
+          width: @vr1;
+          height: @vr1;
+          font-size: @vr1;
+        }
+        &-2 {
+          width: @vr2;
+          height: @vr2;
+          font-size: @vr2;
+        }
+        &-3 {
+          width: @vr3;
+          height: @vr3;
+          font-size: @vr3;
+        }
+        &-4 {
+          width: @vr4;
+          height: @vr4;
+          font-size: @vr4;
+        }
+        &-5 {
+          width: @vr5;
+          height: @vr5;
+          font-size: @vr5;
+        }
+        &-6 {
+          width: @vr6;
+          height: @vr6;
+          font-size: @vr6;
+        }
+        &-7 {
+          width: @vr7;
+          height: @vr7;
+          font-size: @vr7;
+        }
+        &-8 {
+          width: @vr8;
+          height: @vr8;
+          font-size: @vr8;
+        }
+        &-9 {
+          width: @vr9;
+          height: @vr9;
+          font-size: @vr9;
+        }
+        &-10 {
+          width: @vr10;
+          height: @vr10;
+          font-size: @vr10;
+        }
+      }
+    }
+  }
+
+  @media @tablet {
+    .-t {
+      &.-xsmall {
+        width: @vr3;
+        height: @vr3;
+        font-size: @vr3;
+      }
+      &.-small {
+        width: @vr4;
+        height: @vr4;
+        font-size: @vr4;
+      }
+      &.-large {
+        width: @vr6;
+        height: @vr6;
+        font-size: @vr6;
+      }
+      &.-xlarge {
+        width: @vr7;
+        height: @vr7;
+        font-size: @vr7;
+      }
+      &.-size {
+        &-1 {
+          width: @vr1;
+          height: @vr1;
+          font-size: @vr1;
+        }
+        &-2 {
+          width: @vr2;
+          height: @vr2;
+          font-size: @vr2;
+        }
+        &-3 {
+          width: @vr3;
+          height: @vr3;
+          font-size: @vr3;
+        }
+        &-4 {
+          width: @vr4;
+          height: @vr4;
+          font-size: @vr4;
+        }
+        &-5 {
+          width: @vr5;
+          height: @vr5;
+          font-size: @vr5;
+        }
+        &-6 {
+          width: @vr6;
+          height: @vr6;
+          font-size: @vr6;
+        }
+        &-7 {
+          width: @vr7;
+          height: @vr7;
+          font-size: @vr7;
+        }
+        &-8 {
+          width: @vr8;
+          height: @vr8;
+          font-size: @vr8;
+        }
+        &-9 {
+          width: @vr9;
+          height: @vr9;
+          font-size: @vr9;
+        }
+        &-10 {
+          width: @vr10;
+          height: @vr10;
+          font-size: @vr10;
+        }
+      }
+    }
+  }
+
+  @media @desktop {
+    .-d {
+      &.-xsmall {
+        width: @vr3;
+        height: @vr3;
+        font-size: @vr3;
+      }
+      &.-small {
+        width: @vr4;
+        height: @vr4;
+        font-size: @vr4;
+      }
+      &.-large {
+        width: @vr6;
+        height: @vr6;
+        font-size: @vr6;
+      }
+      &.-xlarge {
+        width: @vr7;
+        height: @vr7;
+        font-size: @vr7;
+      }
+      &.-size {
+        &-1 {
+          width: @vr1;
+          height: @vr1;
+          font-size: @vr1;
+        }
+        &-2 {
+          width: @vr2;
+          height: @vr2;
+          font-size: @vr2;
+        }
+        &-3 {
+          width: @vr3;
+          height: @vr3;
+          font-size: @vr3;
+        }
+        &-4 {
+          width: @vr4;
+          height: @vr4;
+          font-size: @vr4;
+        }
+        &-5 {
+          width: @vr5;
+          height: @vr5;
+          font-size: @vr5;
+        }
+        &-6 {
+          width: @vr6;
+          height: @vr6;
+          font-size: @vr6;
+        }
+        &-7 {
+          width: @vr7;
+          height: @vr7;
+          font-size: @vr7;
+        }
+        &-8 {
+          width: @vr8;
+          height: @vr8;
+          font-size: @vr8;
+        }
+        &-9 {
+          width: @vr9;
+          height: @vr9;
+          font-size: @vr9;
+        }
+        &-10 {
+          width: @vr10;
+          height: @vr10;
+          font-size: @vr10;
+        }
+      }
+    }
+  }
+
+}

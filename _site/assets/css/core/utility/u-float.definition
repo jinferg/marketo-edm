@@ -1,0 +1,53 @@
+// Float Utility
+// ============================
+
+.u-float{
+	&-none {
+		float: none !important;
+	}
+	&-left {
+		float: left !important;
+	}
+	&-right {
+		float: right !important;
+	}
+}
+@media @mobile {
+	.u-float-m{
+		&-none {
+			float: none !important;
+		}
+		&-left {
+			float: left !important;
+		}
+		&-right {
+			float: right !important;
+		}
+	}
+}
+@media @tablet {
+	.u-float-t{
+		&-none {
+			float: none !important;
+		}
+		&-left {
+			float: left !important;
+		}
+		&-right {
+			float: right !important;
+		}
+	}
+}
+@media @desktop {
+	.u-float-d{
+		&-none {
+			float: none !important;
+		}
+		&-left {
+			float: left !important;
+		}
+		&-right {
+			float: right !important;
+		}
+	}
+}

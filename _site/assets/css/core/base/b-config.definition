@@ -1,0 +1,109 @@
+// Config Definition
+// ============================================================
+
+
+// DEFAULTS
+// ------------------------------
+
+@max-width: 1440px;
+@radius: 4px;
+@background: #fff;
+@default-columns: 16;
+@border: 1px solid #e4e4e4;
+
+// TYPOGRAPHY
+// ------------------------------
+
+@font-family: 'Catamaran', sans-serif;
+@font-size: 1.6rem; // html sets font-size to 62.5% which makes calculating rems easy 1.4rem = 14px etc
+@thin: 200;
+@light: 300;
+@regular: 400;
+@medium: 500;
+@semi-bold: 600;
+@bold: 700;
+@line-height: 2rem; // 20px
+
+
+// COLORS
+// ------------------------------
+
+// Default
+@red: #FF4C24;
+@orange: #FF7C52;
+@yellow: #FFB019;
+@green: #00D24B;
+@blue: #36A2FF;
+@purple: #5273FF;
+@black: #000000;
+@white: #fff;
+
+// Special
+@default-color: #687A83;
+@brand-color: #4580FF;
+@accent-color: #45D8FF;
+@link-color: @accent-color;
+@input-color: #F7F8FD;
+@shade-light: rgba(0,0,0,.05);
+@shade: rgba(0,0,0,.1);
+@shade-heavy: rgba(0,0,0,.15);
+
+
+// BREAKPOINTS
+// ------------------------------
+
+@tv:                  ~"only screen and (min-width : 1920px)";
+@desktop:             ~"only screen and (min-width : 1440px) and (max-width : 1919px)";
+@tablet:              ~"only screen and (min-width : 1024px) and (max-width : 1439px)";
+@mobile-ls:           ~"only screen and (min-width : 667px) and (max-width : 1023px)";
+@mobile:              ~"only screen and (max-width : 666px)";
+
+@tv-inherit:          ~"only screen and (min-width: 1920px)";
+@desktop-inherit:     ~"only screen and (min-width: 1440px)";
+@tablet-inherit:      ~"only screen and (min-width: 1024px)";
+@mobile-ls-inherit:   ~"only screen and (min-width: 667px)";
+@mobile-inherit:      ~"only screen";
+
+// VERTICAL RHYTHM
+// ------------------------------
+// Unit Scale for Padding, Margin etc
+
+@vr0: .5rem;
+@vr1: 1rem;
+@vr2: 2rem;
+@vr3: 3rem;
+@vr4: 4rem;
+@vr5: 5rem;
+@vr6: 6rem;
+@vr7: 7rem;
+@vr8: 8rem;
+@vr9: 9rem;
+@vr10: 10rem;
+@vr11: 11rem;
+@vr12: 12rem;
+@vr13: 13rem;
+@vr14: 14rem;
+@vr15: 15rem;
+@vr16: 16rem;
+@vr17: 17rem;
+@vr18: 18rem;
+@vr19: 19rem;
+@vr20: 20rem;
+
+
+// Typography Scale
+// ------------------------------
+
+@h1: 3.6rem;
+@h2: 2.8rem;
+@h3: 2.4rem;
+@h4: 1.8rem;
+@h5: 1.5rem;
+@h6: 1.3rem;
+
+@h1-height: 4.5rem;
+@h2-height: 3.5rem;
+@h3-height: 3rem;
+@h4-height: 2.3rem;
+@h5-height: 1.9rem;
+@h6-height: 1.6rem;

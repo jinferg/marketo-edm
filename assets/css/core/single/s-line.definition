@@ -1,0 +1,13 @@
+// Line Single
+// ============================================================
+
+@s-line__weight: 1px;
+@s-line__color: @shade;
+
+
+.s-line {
+  display: block;
+  width: 100%;
+  height: @s-line__weight;
+  background: @s-line__color;
+}

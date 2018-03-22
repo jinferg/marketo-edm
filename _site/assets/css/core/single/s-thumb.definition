@@ -1,0 +1,63 @@
+// Thumbnail Single
+// ============================================================
+
+@s-thumb__radius: @radius;
+@s-thumb__xsmall: @vr3;
+@s-thumb__small: @vr5;
+@s-thumb__medium: @vr7;
+@s-thumb__large: @vr9;
+@s-thumb__xlarge: @vr12;
+
+.s-thumb {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: @s-thumb__medium;
+  height: @s-thumb__medium;
+  vertical-align: middle;
+  border-radius: @s-thumb__radius;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  & > img {
+    width: 100%;
+    border-radius: @s-thumb__radius;
+  }
+
+  &.-block {
+    display: block;
+  }
+
+  // Scale Modifiers
+  &.-xsmall {
+    width: @s-thumb__xsmall;
+    height: @s-thumb__xsmall;
+  }
+  &.-small {
+    width: @s-thumb__small;
+    height: @s-thumb__small;
+  }
+  &.-large {
+    width: @s-thumb__large;
+    height: @s-thumb__large;
+  }
+  &.-xlarge {
+    width: @s-thumb__xlarge;
+    height: @s-thumb__xlarge;
+  }
+
+  // Shape Modifiers
+  &.-sharp {
+  border-radius: 0;
+    & > img {
+      border-radius: 0;
+    }
+  }
+  &.-round {
+  border-radius: 50%;
+    & > img {
+      border-radius: 50%;
+    }
+  }
+}

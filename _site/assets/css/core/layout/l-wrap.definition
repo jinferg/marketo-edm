@@ -1,0 +1,67 @@
+// Wrap Layout
+// ============================================================
+
+@l-wrap__max-width: @max-width;
+
+.l-wrap {
+
+  position: relative;
+  width: 100%;
+  max-width: @l-wrap__max-width;
+  margin: auto;
+  padding-right: @vr6;
+  padding-left: @vr6;
+  @media @mobile {
+    padding-right: @vr2;
+    padding-left: @vr2;
+  }
+  @media @mobile-ls {
+    padding-right: @vr3;
+    padding-left: @vr3;
+  }
+  @media @tablet {
+    padding-right: @vr4;
+    padding-left: @vr4;
+  }
+  @media @tv {
+    max-width: 1800px;
+    padding-right: @vr8;
+    padding-left: @vr8;
+  }
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  &.-flush {
+    padding: 0;
+    @media @mobile {
+      padding: 0;
+    }
+  }
+  &.-m-flush {
+    @media @mobile {
+      padding: 0;
+    }
+  }
+  &.-ml-flush {
+    @media @mobile-ls {
+      padding: 0;
+    }
+  }
+  &.-t-flush {
+    @media @tablet {
+      padding: 0;
+    }
+  }
+  &.-d-flush {
+    @media @desktop {
+      padding: 0;
+    }
+  }
+  &.-v-flush {
+    @media @tv {
+      padding: 0;
+    }
+  }
+}

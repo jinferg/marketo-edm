@@ -1,0 +1,81 @@
+// Align Utility
+// ============================================================
+
+.u-align-top{
+  vertical-align: top !important;
+}
+.u-align-middle{
+  vertical-align: middle !important;
+}
+.u-align-bottom{
+  vertical-align: bottom !important;
+}
+.u-align-left {
+  text-align: left !important;
+}
+.u-align-right{
+  text-align: right !important;
+}
+.u-align-center {
+  text-align: center !important;
+}
+@media @mobile {
+  .u-align-m-top{
+    vertical-align: top !important;
+  }
+  .u-align-m-middle{
+    vertical-align: middle !important;
+  }
+  .u-align-m-bottom{
+    vertical-align: bottom !important;
+  }
+	.u-align-m-left {
+	  text-align: left !important;
+	}
+	.u-align-m-right {
+	  text-align: right !important;
+	}
+  .u-align-m-center {
+    text-align: center !important;
+  }
+}
+@media @tablet {
+  .u-align-t-top{
+    vertical-align: top !important;
+  }
+  .u-align-t-middle{
+    vertical-align: middle !important;
+  }
+  .u-align-t-bottom{
+    vertical-align: bottom !important;
+  }
+  .u-align-t-left {
+    text-align: left !important;
+  }
+  .u-align-t-right {
+    text-align: right !important;
+  }
+  .u-align-t-center {
+    text-align: center !important;
+  }
+}
+@media @desktop {
+  .u-align-d-top{
+    vertical-align: top !important;
+  }
+  .u-align-d-middle{
+    vertical-align: middle !important;
+  }
+  .u-align-d-bottom{
+    vertical-align: bottom !important;
+  }
+  .u-align-d-left {
+    text-align: left !important;
+  }
+  .u-align-d-right {
+    text-align: right !important;
+  }
+  .u-align-d-center {
+    text-align: center !important;
+  }
+}

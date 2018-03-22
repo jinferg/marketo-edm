@@ -1,0 +1,42 @@
+// Accordian Module
+// ============================================================
+
+.m-accordian {
+  &.-nav-mobile {
+    width: 250px;
+    color: white;
+    .m-accordian__trigger {
+      margin: 0;
+      padding: 1.3rem;
+      color: white;
+      font-size: 15px
+    }
+    ul {
+      margin: 0;
+    }
+    ul ul {
+      display: none;
+      background: @brand-color;
+    }
+    li {
+      list-style-type: none;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    ul ul li {
+      border-bottom: 0;
+      a {
+        color: white;
+        text-decoration: none;
+        font-size: 13px;
+        line-height: 1;
+        display: block;
+        padding: 1.7rem;
+        transition: all 0.15s;
+        &:hover {
+          background: lighten(@brand-color, 10%);
+          border-left: 5px solid lightgreen;
+        }
+      }
+    }
+  }
+}

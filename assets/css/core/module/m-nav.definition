@@ -1,0 +1,54 @@
+// Navigation Module
+// ============================================================
+
+@m-nav__height: 65px;
+
+.m-nav {
+  display: flex;
+  width: 100%;
+  height: @m-nav__height;
+  &.-reverse {
+    a {
+      color: white;
+    }
+    .m-nav__item {
+      &:hover {
+        background-color: rgba(255,255,255,.04);
+      }
+      &.is-active {
+        border-top: 3px solid @accent-color;
+      }
+    }
+  }
+  a {
+    color: @black;
+    &:hover {
+      background-color: rgba(0,0,0,.02);
+    }
+    &.-no-state {
+      &:hover {
+        background-color: transparent;
+      }
+    }
+  }
+  &__group {
+    display: flex;
+    &.-right {
+      margin-left: auto;
+    }
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    padding-left: @vr2;
+    padding-right: @vr2;
+    font-weight: @regular;
+    transition: all .2s ease;
+    &.-no-pad {
+      padding: 0;
+    }
+    &.is-active {
+      border-top: 3px solid @brand-color;
+    }
+  }
+}

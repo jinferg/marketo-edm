@@ -1,0 +1,245 @@
+// Flag Module
+// ============================================================
+
+@m-flag__xtight: @vr1;
+@m-flag__tight: @vr2;
+@m-flag__narrow: @vr3;
+@m-flag__wide: @vr4;
+@m-flag__xwide: @vr5;
+
+
+.m-flag {
+
+  display: flex;
+  margin: 0;
+  align-items: center;
+
+  &.-wrap {
+    flex-wrap: wrap;
+  }
+  @media @mobile {
+    &.-m-wrap {
+      flex-wrap: wrap;
+    }
+  }
+  @media @mobile-ls {
+    &.-ml-wrap {
+      flex-wrap: wrap;
+    }
+  }
+  @media @tablet {
+    &.-t-wrap {
+      flex-wrap: wrap;
+    }
+  }
+  @media @desktop {
+    &.-d-wrap {
+      flex-wrap: wrap;
+    }
+  }
+  @media @tv {
+    &.-v-wrap {
+      flex-wrap: wrap;
+    }
+  }
+
+  // Spacing
+  &.-xtight {
+    .m-flag__item:first-child {
+      padding-right: @m-flag__xtight;
+    }
+  }
+  &.-tight {
+    .m-flag__item:first-child {
+      padding-right: @m-flag__tight;
+    }
+  }
+  &.-narrow {
+    .m-flag__item:first-child {
+      padding-right: @m-flag__narrow;
+    }
+  }
+  &.-wide {
+    .m-flag__item:first-child {
+      padding-right: @m-flag__wide;
+    }
+  }
+  &.-xwide {
+    .m-flag__item:first-child {
+      padding-right: @m-flag__xwide;
+    }
+  }
+  &.-m {
+    @media @mobile {
+      &-xtight {
+        .m-flag__item:first-child {
+          padding-right: @m-flag__xtight;
+        }
+      }
+      &-tight {
+        .m-flag__item:first-child {
+          padding-right: @m-flag__tight;
+        }
+      }
+      &-narrow {
+        .m-flag__item:first-child {
+          padding-right: @m-flag__narrow;
+        }
+      }
+      &-wide {
+        .m-flag__item:first-child {
+          padding-right: @m-flag__wide;
+        }
+      }
+      &-xwide {
+        .m-flag__item:first-child {
+          padding-right: @m-flag__xwide;
+        }
+      }
+    }
+  }
+  &.-ml {
+    @media @mobile-ls {
+      &-xtight {
+        .m-flag__item:first-child {
+          padding-right: @m-flag__xtight;
+        }
+      }
+      &-tight {
+        .m-flag__item:first-child {
+          padding-right: @m-flag__tight;
+        }
+      }
+      &-narrow {
+        .m-flag__item:first-child {
+          padding-right: @m-flag__narrow;
+        }
+      }
+      &-wide {
+        .m-flag__item:first-child {
+          padding-right: @m-flag__wide;
+        }
+      }
+      &-xwide {
+        .m-flag__item:first-child {
+          padding-right: @m-flag__xwide;
+        }
+      }
+    }
+  }
+  &.-t {
+    @media @tablet {
+      &-xtight {
+        .m-flag__item:first-child {
+          padding-right: @m-flag__xtight;
+        }
+      }
+      &-tight {
+        .m-flag__item:first-child {
+          padding-right: @m-flag__tight;
+        }
+      }
+      &-narrow {
+        .m-flag__item:first-child {
+          padding-right: @m-flag__narrow;
+        }
+      }
+      &-wide {
+        .m-flag__item:first-child {
+          padding-right: @m-flag__wide;
+        }
+      }
+      &-xwide {
+        .m-flag__item:first-child {
+          padding-right: @m-flag__xwide;
+        }
+      }
+    }
+  }
+  &.-d {
+    @media @desktop {
+      &-xtight {
+        .m-flag__item:first-child {
+          padding-right: @m-flag__xtight;
+        }
+      }
+      &-tight {
+        .m-flag__item:first-child {
+          padding-right: @m-flag__tight;
+        }
+      }
+      &-narrow {
+        .m-flag__item:first-child {
+          padding-right: @m-flag__narrow;
+        }
+      }
+      &-wide {
+        .m-flag__item:first-child {
+          padding-right: @m-flag__wide;
+        }
+      }
+      &-xwide {
+        .m-flag__item:first-child {
+          padding-right: @m-flag__xwide;
+        }
+      }
+    }
+  }
+  &.-v {
+    @media @tv {
+      &-xtight {
+        .m-flag__item:first-child {
+          padding-right: @m-flag__xtight;
+        }
+      }
+      &-tight {
+        .m-flag__item:first-child {
+          padding-right: @m-flag__tight;
+        }
+      }
+      &-narrow {
+        .m-flag__item:first-child {
+          padding-right: @m-flag__narrow;
+        }
+      }
+      &-wide {
+        .m-flag__item:first-child {
+          padding-right: @m-flag__wide;
+        }
+      }
+      &-xwide {
+        .m-flag__item:first-child {
+          padding-right: @m-flag__xwide;
+        }
+      }
+    }
+  }
+
+  &__item {
+
+    & > img {
+      display: block;
+      max-width: none;
+    }
+
+    // Vertical Alignment
+    &.-top {
+      align-self: flex-start;
+    }
+    &.-bottom {
+      align-self: flex-end;
+    }
+
+    // Custom
+    &.-fluid {
+      width: 100%;
+    }
+  }
+
+  &.-fluid {
+    width: 100%;
+  }
+  &.-center {
+    margin: auto;
+  }
+}

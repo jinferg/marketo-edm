@@ -1,0 +1,21 @@
+// Image Single
+// ============================================================
+
+@s-img__radius: @radius;
+
+
+.s-img {
+  display: block;
+  &.-inline {
+    display: inline-block;
+  }
+  &.-radius {
+    border-radius: @s-img__radius;
+  }
+  &.-round {
+    border-radius: 100%;
+  }
+  &.-fluid {
+    width: 100%;
+  }
+}

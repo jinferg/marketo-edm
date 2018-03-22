@@ -1,0 +1,334 @@
+// Head Single
+// ============================================================
+
+// Weight Variables
+@s-head__thin: @thin;
+@s-head__light: @light;
+@s-head__regular: @regular;
+@s-head__medium: @medium;
+@s-head__semi-bold: @semi-bold;
+@s-head__bold: @bold;
+
+// Spacing Variables
+@s-head__xtight: @vr1;
+@s-head__tight: @vr3;
+@s-head__narrow: @vr5;
+@s-head__wide: @vr7;
+@s-head__xwide: @vr9;
+
+// Custom
+@s-head__cond: -1px;
+@s-head__sprd: 1px;
+
+// Define
+// ------------------------------
+
+.s-head {
+  display: block;
+  margin: 0;
+
+  // Reset
+  // ------------------------------
+
+  &.-compact {
+    line-height: 1;
+  }
+
+
+  // Size Overrides
+  // ------------------------------
+
+  &.-h1 {
+    font-size: @h1;
+    line-height: @h1-height;
+    &.-resp {
+      @media @mobile {
+        font-size: @h3;
+        line-height: @h3-height;
+      }
+      @media @tablet {
+        font-size: @h2;
+        line-height: @h2-height;
+      }
+    }
+  }
+  &.-h2 {
+    font-size: @h2;
+    line-height: @h2-height;
+    &.-resp {
+      @media @mobile {
+        font-size: @h4;
+        line-height: @h4-height;
+      }
+      @media @tablet {
+        font-size: @h3;
+        line-height: @h3-height;
+      }
+    }
+  }
+  &.-h3 {
+    font-size: @h3;
+    line-height: @h3-height;
+    &.-resp {
+      @media @mobile {
+        font-size: @h5;
+        line-height: @h5-height;
+      }
+      @media @tablet {
+        font-size: @h4;
+        line-height: @h4-height;
+      }
+    }
+  }
+  &.-h4 {
+    font-size: @h4;
+    line-height: @h4-height;
+    &.-resp {
+      @media @mobile {
+        font-size: @h6;
+        line-height: @h6-height;
+      }
+      @media @tablet {
+        font-size: @h5;
+        line-height: @h5-height;
+      }
+    }
+  }
+  &.-h5 {
+    font-size: @h5;
+    line-height: @h5-height;
+    &.-resp {
+      @media @mobile {
+        font-size: @h6;
+        line-height: @h6-height;
+      }
+      @media @tablet {
+        font-size: @h6;
+        line-height: @h6-height;
+      }
+    }
+  }
+  &.-h6 {
+    font-size: @h6;
+    line-height: @h6-height;
+  }
+
+  @media @mobile {
+    &.-m-h1 {
+      font-size: @h1;
+      line-height: @h1-height;
+    }
+    &.-m-h2 {
+      font-size: @h2;
+      line-height: @h2-height;
+    }
+    &.-m-h3 {
+      font-size: @h3;
+      line-height: @h3-height;
+    }
+    &.-m-h4 {
+      font-size: @h4;
+      line-height: @h4-height;
+    }
+    &.-m-h5 {
+      font-size: @h5;
+      line-height: @h5-height;
+    }
+    &.-m-h6 {
+      font-size: @h6;
+      line-height: @h6-height;
+    }
+  }
+  @media @mobile-ls {
+    &.-ml-h1 {
+      font-size: @h1;
+      line-height: @h1-height;
+    }
+    &.-ml-h2 {
+      font-size: @h2;
+      line-height: @h2-height;
+    }
+    &.-ml-h3 {
+      font-size: @h3;
+      line-height: @h3-height;
+    }
+    &.-ml-h4 {
+      font-size: @h4;
+      line-height: @h4-height;
+    }
+    &.-ml-h5 {
+      font-size: @h5;
+      line-height: @h5-height;
+    }
+    &.-ml-h6 {
+      font-size: @h6;
+      line-height: @h6-height;
+    }
+  }
+  @media @tablet {
+    &.-t-h1 {
+      font-size: @h1;
+      line-height: @h1-height;
+    }
+    &.-t-h2 {
+      font-size: @h2;
+      line-height: @h2-height;
+    }
+    &.-t-h3 {
+      font-size: @h3;
+      line-height: @h3-height;
+    }
+    &.-t-h4 {
+      font-size: @h4;
+      line-height: @h4-height;
+    }
+    &.-t-h5 {
+      font-size: @h5;
+      line-height: @h5-height;
+    }
+    &.-t-h6 {
+      font-size: @h6;
+      line-height: @h6-height;
+    }
+  }
+  @media @desktop {
+    &.-d-h1 {
+      font-size: @h1;
+      line-height: @h1-height;
+    }
+    &.-d-h2 {
+      font-size: @h2;
+      line-height: @h2-height;
+    }
+    &.-d-h3 {
+      font-size: @h3;
+      line-height: @h3-height;
+    }
+    &.-d-h4 {
+      font-size: @h4;
+      line-height: @h4-height;
+    }
+    &.-d-h5 {
+      font-size: @h5;
+      line-height: @h5-height;
+    }
+    &.-d-h6 {
+      font-size: @h6;
+      line-height: @h6-height;
+    }
+  }
+
+
+  // Weight Variation
+  // ------------------------------
+
+  &.-thin {
+    font-weight: @s-head__light;
+  }
+  &.-light {
+    font-weight: @s-head__light;
+  }
+  &.-regular {
+    font-weight: @s-head__regular;
+  }
+  &.-medium {
+    font-weight: @s-head__medium;
+  }
+  &.-semi-bold {
+    font-weight: @s-head__semi-bold;
+  }
+  &.-bold {
+    font-weight: @s-head__bold;
+  }
+
+
+  // Custom Variation
+  // ------------------------------
+
+  &.-uppr {
+    text-transform: uppercase;
+  }
+  &.-cond {
+    letter-spacing: @s-head__cond;
+  }
+  &.-sprd {
+    letter-spacing: @s-head__sprd;
+  }
+  &.-inline {
+    display: inline-block;
+  }
+  &.-ruled {
+    padding-bottom: @vr0;
+    border-bottom: 1px solid darken(@background, 10%);
+    margin-bottom: @vr0 + @vr0;
+  }
+  &.-center {
+    text-align: center;
+  }
+
+
+  // Spacing Variations
+  // ------------------------------
+
+  &.-xtight {
+    margin-bottom: @s-head__xtight;
+  }
+  &.-tight {
+    margin-bottom: @s-head__tight;
+  }
+  &.-narrow {
+    margin-bottom: @s-head__narrow;
+  }
+  &.-wide {
+    margin-bottom: @s-head__wide;
+  }
+  &.-xwide {
+    margin-bottom: @s-head__xwide;
+  }
+  &.-relaxed {
+    line-height: 1.5;
+  }
+  &.-asleep {
+    line-height: 2;
+  }
+}
+
+
+// Format
+// ------------------------------
+h1.s-head.-format {
+  font-size: @h1;
+  line-height: @h1-height;
+  margin-top: @line-height * 3;
+  margin-bottom: @line-height;
+}
+h2.s-head.-format {
+  font-size: @h2;
+  line-height: @h2-height;
+  margin-top: @line-height * 3;
+  margin-bottom: @line-height;
+}
+h3.s-head.-format {
+  font-size: @h3;
+  line-height: @h3-height;
+  margin-top: @line-height * 2;
+  margin-bottom: @line-height;
+}
+h4.s-head.-format {
+  font-size: @h4;
+  line-height: @h4-height;
+  margin-top: @line-height;
+  margin-bottom: @line-height;
+}
+h5.s-head.-format {
+  font-size: @h5;
+  line-height: @h5-height;
+  margin-top: @line-height;
+  margin-bottom: @line-height;
+}
+h6.s-head.-format {
+  font-size: @h6;
+  line-height: @h6-height;
+  margin-top: @line-height;
+  margin-bottom: @line-height;
+}
