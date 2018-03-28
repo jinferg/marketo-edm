@@ -88,7 +88,7 @@ text="#000000">
       <!-- END / HEADER -->
 
       <!-- MODULE CONTAINER -->
-      <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; border-spacing: 0; padding: 0; width: inherit; max-width: 650px;">
+      <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; border-spacing: 0; padding: 0; width: 100%; max-width: 650px;">
       	<tr>
       		<td class="mktoContainer" id="mainContainer" align="center" valign="top" style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0;
           background-color: #EDF4FB;
@@ -198,6 +198,7 @@ text="#000000">
                 </td>
               </tr>
 
+
               <!-- END / CTA -->
             </table>
 
@@ -234,7 +235,11 @@ text="#000000">
                   font-size: 15px;
                   font-weight: normal;
                   line-height: 24px;">
-                  {{SP_Send_Alert_Info}}
+
+                  <div class="mktEditable" id="alertInfo" mktoName="Alert Info">
+                    {{SP_Send_Alert_Info}}
+                  </div>
+
                 </td>
               </tr>
               <!-- END / BODY -->
