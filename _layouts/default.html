@@ -57,9 +57,6 @@
 	<meta class="mktoBoolean" id="MHL_title_switch" mktoName="Show Title" default="true" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show" mktoModuleScope="true">
 	<meta class="mktoBoolean" id="MHL_sub_switch" mktoName="Show Subtitle" default="true" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show" mktoModuleScope="true">
 
-	<!-- Module - Hero Image -->
-	<meta class="mktoImg" id="MHI_image" mktoName="Hero Image" default="http://via.placeholder.com/800x500" mktoModuleScope="true">
-
 	<!-- Module - Body Welcome -->
 	<meta class="mktoBoolean" id="MBW_name_switch" mktoName="Show Welcome" default="true" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show" mktoModuleScope="true">
 
@@ -68,18 +65,9 @@
 	<meta class="mktoString" id="MTB_btnText" mktoName="Button Text" default="Get started" mktoModuleScope="true">
 	<meta class="mktoString" id="MTB_btnLink" mktoName="Button Link" default="https://fergus.com" mktoModuleScope="true">
 
-	<!-- Module - Image L + Text R -->
-	<meta class="mktoImg" id="MIT_image" mktoName="Image" default="http://via.placeholder.com/350x450" mktoModuleScope="true">
-
 	<!-- Module - Two Col -->
 	<meta class="mktoBoolean" id="MTC_intro_switch" mktoName="Show Intro" default="true" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show" mktoModuleScope="true">
-	<meta class="mktoImg" id="MTC_image1" mktoName="Image 1" default="http://via.placeholder.com/800x500" mktoModuleScope="true">
-	<meta class="mktoImg" id="MTC_image2" mktoName="Image 2" default="http://via.placeholder.com/800x500" mktoModuleScope="true">
 
-	<!-- Module - Three Col -->
-	<meta class="mktoImg" id="MTHC_image1" mktoName="Image 1" default="http://via.placeholder.com/800x500" mktoModuleScope="true">
-	<meta class="mktoImg" id="MTHC_image2" mktoName="Image 2" default="http://via.placeholder.com/800x500" mktoModuleScope="true">
-	<meta class="mktoImg" id="MTHC_image3" mktoName="Image 3" default="http://via.placeholder.com/800x500" mktoModuleScope="true">
 
 	<!-- Module - CTA -->
 	<meta class="mktoBoolean" id="MCTA_disclaimer_switch" mktoName="Show Disclaimer" default="true" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show" mktoModuleScope="true">
@@ -257,8 +245,8 @@ text="#000000">
 							<!-- HERO IMAGE -->
 							<tr>
 								<td align="center" valign="top" style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0;">
-									<img border="0" vspace="0" hspace="0" style="padding: 0; margin: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; border: none; display: block; width: 100%;"
-									src="${MHI_image}">
+
+									<img class="mktoImg" id="MHI_image" mktoName="Example Image"  border="0" vspace="0" hspace="0" style="padding: 0; margin: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; border: none; display: block; width: 100%;">
 								</td>
 							</tr>
 							<!-- END / HERO IMAGE -->
@@ -460,8 +448,7 @@ text="#000000">
 											<td align="left" valign="top" style="border-collapse: collapse; border-spacing: 0;
 												width: 50%;
 												padding-right: 40px;" class="col">
-												<img border="0" vspace="0" hspace="0" style="padding: 0; margin: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; border: none; display: block;
-												color: #000000; width: 100%;"	src="${MIT_image}" class="resp-img">
+												<img class="mktoImg resp-img" id="MIT_image" mktoName="Col Image"  border="0" vspace="0" hspace="0" style="padding: 0; margin: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; border: none; display: block; width: 100%;">
 
 											</td>
 											<td align="left" valign="top" style="font-size: 15px; font-weight: 400; line-height: 160%; border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0;
@@ -568,9 +555,10 @@ text="#000000">
 												padding-right: 15px;
 												color: #627E90;
 												font-family: 'Lato', sans-serif;" class="col">
-												<img border="0" vspace="0" hspace="0" style="padding: 0; margin: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; border: none; display: block;
-												color: #000000; width: 100%; padding-bottom: 20px;"
-												src="${MTC_image1}">
+
+												<img class="mktoImg" id="MTC_image1" mktoName="Col Image"  border="0" vspace="0" hspace="0" style="padding: 0; margin: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; border: none; display: block; width: 100%;">
+
+
 												<b style="color: #0F3752;">
 													<div class="mktoText" id="MTC_title1" mktoName="Title 1">
 														Title 1
@@ -587,9 +575,9 @@ text="#000000">
 												padding-left: 15px;
 												color: #627E90;
 												font-family: 'Lato', sans-serif;" class="col">
-												<img border="0" vspace="0" hspace="0" style="padding: 0; margin: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; border: none; display: block;
-												color: #000000; width: 100%; padding-bottom: 20px;"
-												src="${MTC_image2}">
+												
+												<img class="mktoImg" id="MTC_image2" mktoName="Col Image"  border="0" vspace="0" hspace="0" style="padding: 0; margin: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; border: none; display: block; width: 100%;">
+
 												<b style="color: #0F3752;">
 													<div class="mktoText" id="MTC_title2" mktoName="Title 2">
 														Title
@@ -632,9 +620,9 @@ text="#000000">
 												padding-right: 15px;
 												color: #627E90;
 												font-family: 'Lato', sans-serif;" class="col">
-												<img border="0" vspace="0" hspace="0" style="padding: 0; margin: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; border: none; display: block;
-												color: #000000; width: 100%; padding-bottom: 20px;"
-												src="${MTHC_image1}">
+
+												<img class="mktoImg" id="MTHC_image1" mktoName="Col Image"  border="0" vspace="0" hspace="0" style="padding: 0; margin: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; border: none; display: block; width: 100%;">
+
 												<b style="color: #0F3752;">
 													<div class="mktoText" id="MTHC_title1" mktoName="Title 1">
 														Title
@@ -652,9 +640,9 @@ text="#000000">
 												padding-right: 5px;
 												color: #627E90;
 												font-family: 'Lato', sans-serif;" class="col">
-												<img border="0" vspace="0" hspace="0" style="padding: 0; margin: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; border: none; display: block;
-												color: #000000; width: 100%; padding-bottom: 20px;"
-												src="${MTHC_image2}">
+												
+												<img class="mktoImg" id="MTHC_image2" mktoName="Col Image"  border="0" vspace="0" hspace="0" style="padding: 0; margin: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; border: none; display: block; width: 100%;">
+
 												<b style="color: #0F3752;">
 													<div class="mktoText" id="MTHC_title2" mktoName="Title 2">
 														Title
@@ -671,9 +659,9 @@ text="#000000">
 												padding-left: 15px;
 												color: #627E90;
 												font-family: 'Lato', sans-serif;" class="col">
-												<img border="0" vspace="0" hspace="0" style="padding: 0; margin: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; border: none; display: block;
-												color: #000000; width: 100%; padding-bottom: 20px;"
-												src="${MTHC_image3}">
+												
+												<img class="mktoImg" id="MTHC_image3" mktoName="Col Image"  border="0" vspace="0" hspace="0" style="padding: 0; margin: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; border: none; display: block; width: 100%;">
+
 												<b style="color: #0F3752;">
 													<div class="mktoText" id="MTHC_title3" mktoName="Title 3">
 														Title
